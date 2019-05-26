@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    // $(document).ready(function () {
+    //     //  var p=document.getElementById("02").style.display="none";  
+    //     $("span").css("display","none");    
+    //    });
+    function showspan() {
+        $("div#description").show();
+    }
+    function hidespan() {
+        $("div#description").hide();
+    }
+    function removediv(){
+        $("div#description").remove();
+    }
+</script>
+
+<body>
+    <p id="01">hallo world!1</p>
+    <p id="02">hallo world!2</p>
+    <p id="03">hallo world!3</p>
+    <div id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ducimus ab sequi saepe quos odio debitis
+        eum, itaque voluptatum voluptates quas, earum perferendis, dignissimos ad veniam nulla optio? Voluptates,
+        error?</div>
+    <button onclick="showspan();">
+        show
+    </button>
+    <button onclick="hidespan();">
+        hide
+    </button>
+    <button onclick="removediv();">
+            remove
+        </button>
+</body>
+</html>
